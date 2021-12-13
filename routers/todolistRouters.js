@@ -19,7 +19,7 @@ router.get("/getinfo",(req,res)=>{
   (data)=>{
     console.log(req.url);
   const  jsondata=JSON.stringify(data);
-  res.header("Access-Control-Allow-Origin","*")
+  // res.header("Access-Control-Allow-Origin","*")
   res.status(200).send(jsondata);
   },
  (err)=>{
